@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"start":"node server.js",
-	"server":"nodemon server.js"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "author": "mychal",
   "license": "MIT",
@@ -21,6 +21,7 @@
     "validator": "^10.5.0"
   },
   "devDependencies": {
+    "gravatar": "^1.6.0",
     "nodemon": "^1.18.3"
   }
 }
