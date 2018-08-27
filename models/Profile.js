@@ -25,7 +25,7 @@ const ProfileSchema = new Schema({
   ],
   education: [ 
 	{
-	  schoole: { type: String, required: true },
+	  school: { type: String, required: true },
 	  degree: { type: String, required: true },
 	  fieldofstudy: { type: String, required: true },
 	  from: { type: Date, required: true },
