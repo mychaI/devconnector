@@ -69,12 +69,13 @@ router.post('/register', (req, res) => {
 // @access 	Public
 router.post('/login', (req, res) => {
   const { errors, isValid } = validateLoginInput(req.body);
+  console.log(errors)
 
   // Check validation
   if (!isValid) {
 	return res.status(400).json(errors);
   }
-
+/*
   const email = req.body.email;
   const password = req.body.password;
 
@@ -113,7 +114,7 @@ router.post('/login', (req, res) => {
 		  }
 		});
 	})
-
+*/
 })
 
 // @route	GET api/users/current
