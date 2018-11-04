@@ -21,14 +21,16 @@ class Login extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
+
+	if (nextProps.errors) {
+	  this.setState({errors: nextProps.errors})
+	}
+
 	// Check authetication and redirect to dashboard 
 	if (nextProps.auth.isAuthenticated) {
 	  this.props.history.push('/dashboard')
 	}
 
-	if (nextProps.errors) {
-	  this.setState({errors: nextProps.errors})
-	}
   }
 
   onChange(event) {
